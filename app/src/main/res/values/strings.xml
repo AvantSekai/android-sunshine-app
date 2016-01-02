@@ -5,4 +5,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+    <!-- Menu label to fetch updated weather info from the server -->
+    <string name="action_refresh" translatble="false">Refresh</string>
+
 </resources>
