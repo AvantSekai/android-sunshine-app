@@ -7,5 +7,26 @@
 
     <!-- Menu label to fetch updated weather info from the server -->
     <string name="action_refresh" translatble="false">Refresh</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_settings_activity">Settings</string>
+
+    <!-- Settings Attributes for Location EditPreferances -->
+    <string name="pref_location_label">Location</string>
+    <string name="pref_location_key" translatable="false">location</string>
+    <string name="pref_location_default" translatable="false">94703</string>
+
+    <!-- Settings Attributes for Temperature Units Preferences -->
+    <string name="pref_temperature_label">Temperature Units</string>
+    <string name="pref_units_key" translatable="false">Units</string>
+    <string name="pref_units_metric" translatable="false">Metric</string>
+    <string name="pref_units_imperial" translatable="false">Imperial</string>
+    <string name="pref_units_default" translatable="false">Metric</string>
+    <string name="title_activity_map">MapActivity</string>
+
+    <!-- View Map Activity Attributes -->
+    <string name="action_map">Map Location</string>
+
+    <!-- Share Action Attributes -->
+    <string name="menu_title_share">Share</string>
 
 </resources>
