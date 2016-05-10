@@ -38,6 +38,7 @@ public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.v(LOG_TAG, "In the onCreate method");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         if (savedInstanceState == null) {
@@ -52,6 +53,42 @@ public class MainActivity extends ActionBarActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
+    }
+
+    @Override
+    protected void onStart() {
+        Log.v(LOG_TAG, "onStart called...");
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        Log.v(LOG_TAG, "onStop called...");
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        Log.v(LOG_TAG, "onDestroy called...");
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onPause() {
+        Log.v(LOG_TAG, "onPause called...");
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        Log.v(LOG_TAG, "onResume called...");
+        super.onResume();
+    }
+
+    @Override
+    protected void onRestart() {
+        Log.v(LOG_TAG, "onRestart called...");
+        super.onRestart();
     }
 
     @Override
@@ -91,4 +128,6 @@ public class MainActivity extends ActionBarActivity {
             Log.d(LOG_TAG, "Couldn't call " + location + ", no");
         }
     }
+
+
 }
